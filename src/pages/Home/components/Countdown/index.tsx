@@ -21,7 +21,7 @@ export function Countdown() {
         // count with now - startDate because setInterval with 1000 is not always exactly 1 second
         const secondsDifference = differenceInSeconds(
           new Date(),
-          activeCycle.startDate,
+          new Date(activeCycle.startDate),
         )
 
         if (secondsDifference >= totalSeconds) {
